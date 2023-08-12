@@ -3,20 +3,30 @@ body{
     margin: 0;
     font-family:sans-serif;
 }
+a{
+    text-decoration: none;
+    color:#e5e7eb;
+}
+.hero,
 .header,
-.hero{
-    padding: 0 150px;
+.signup
+{
+    width: 1000px;
+}
+.outer-header{
+    background-color: #1f2937;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .header{
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
-    background-color: #1f2937;
     color:#f9faf8;
     font-size: 24px;
     height: 50px;
     font-weight: 900;
-
 }
 .links{
     padding: 0;
@@ -28,13 +38,17 @@ body{
     color:#e5e7eb;
     font-weight: 400;
 }
-a{
-    text-decoration: none;
-    color:#e5e7eb;
-}
-.hero{
+.outer-hero{
     background-color: #1f2937;
     color:#f9faf8;
+    display: flex;
+    justify-content: center;
+}
+.hero{
+    display: flex;
+    justify-content: space-between;
+    padding-top:100px;
+    padding-bottom:100px;
 }
 .hero .title{
     font-size: 48px;
@@ -44,12 +58,7 @@ a{
     color: #e5e7eb;
     font-size: 18px;
 }
-.hero{
-    display: flex;
-    justify-content: space-between;
-    padding-top:100px;
-    padding-bottom:100px;
-}
+    
 .container{
     display: flex;
     flex-direction: column;
@@ -117,17 +126,51 @@ a{
     background-color: #e5e7eb;
     font-weight: 800;
     text-align: right;
-    padding:90px;
+    padding:90px 0;
     display: flex;
     justify-content: center;
 }
-.square{
+.quotes .square{
     width:900px
 }
-.text{
+.quotes .text{
     font-size:36px;
     font-weight: 300 ;
     font-style: italic;
     color:#1f2937;
     text-align: left;
+}
+.space{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 250px;
+}
+.signup{
+    box-sizing: border-box;
+    background-color: #3882f6;
+    color: #f9faf8; 
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+    padding:40px 80px;
+    border-radius: 10px;
+}
+.signup .text{
+    font-size: 18px;
+    font-weight: 800;
+}
+.signup a{
+    border-radius: 8px;
+    border:2px solid #f9faf8;
+    padding:5px 25px;
+    font-weight: 800;
+}
+.footer{
+    background-color: #1f2937;
+    color: #f9faf8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 75px;
 }
